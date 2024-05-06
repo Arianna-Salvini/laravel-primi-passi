@@ -8,7 +8,8 @@
 </head>
 
 <body>
-    <h1>Hello word</h1>
+    <h1>Hello Word</h1>
+    <h2> {{$hello}}</h2>
 </body>
 
 </html>
