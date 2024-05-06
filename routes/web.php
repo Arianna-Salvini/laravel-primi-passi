@@ -20,18 +20,20 @@ Route::get('/', function () {
         "contacts" => "contacts"
     ];
     return view('home', $data);
-});
+})->name("home");
 
 Route::get('/about', function () {
     $about = [
-        "about" => "About"
+        "about" => "About",
+        "home" => "Home"
     ];
     return view('about', $about);
 })->name("about");
 
 Route::get('/contacts', function () {
     $data = [
-        "contacts" => "Contacts"
+        "contacts" => "Contacts",
+        "home" => "Home"
     ];
     return view('contacts', $data);
 })->name("contacts");

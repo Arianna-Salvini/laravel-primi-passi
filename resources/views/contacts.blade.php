@@ -9,5 +9,6 @@
 
 <body>
     <h2> contact</h2>
+    <a href="{{route('home')}}">{{$home}}</a>
 
 </html>
