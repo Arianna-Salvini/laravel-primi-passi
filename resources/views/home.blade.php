@@ -8,6 +8,12 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="{{route('contacts')}}">{{$contacts}}</a>
+            <a href="{{route('about')}}">{{$about}}</a>
+        </nav>
+    </header>
     <h1>Hello Word</h1>
     <h2> {{$hello}}</h2>
 </body>

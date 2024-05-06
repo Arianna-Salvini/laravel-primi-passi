@@ -14,6 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $hello = 'Hello Laravel';
-    return view('home', compact('hello'));
+    $data = [
+        "hello" => 'Hello Laravel',
+        "about" => "about",
+        "contacts" => "contacts"
+    ];
+    return view('home', $data);
 });
+
+Route::get('/about', function () {
+    $about = [
+        "about" => "About"
+    ];
+    return view('about', $about);
+})->name("about");
+
+Route::get('/contacts', function () {
+    $data = [
+        "contacts" => "Contacts"
+    ];
+    return view('contacts', $data);
+})->name("contacts");
